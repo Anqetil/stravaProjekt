@@ -6,8 +6,6 @@ from Pages.delete_activity_page import DeleteEntry
 from Pages.add_activity_page import AddManualyActivity
 from selenium import webdriver
 from Testdata.testdata import TestData
-from time import sleep
-
 
 @pytest.fixture()
 def driver():
@@ -20,12 +18,11 @@ def driver():
 
 
 def test_registration_with_short_pswd(driver):
-    HomePage.navigate(driver, TestData.strava_url) \
-        .useEmailIfIncessary()
-    sleep(4)
+    useEmailIfIncessary = HomePage.navigate(driver, TestData.strava_url).useEmailIfIncessary()
+
     registrationpage = RegistrationPage(driver)
     registrationpage.type_invalid_fake_email()
-    registrationpage.type_invalid_fake_paswd()
+    registrationpage.type_invalid_fake_paswd(useEmailIfIncessary)
     registrationpage.click_to_signUp()
     registrationpage.validate_improper_password_message()
 
@@ -47,5 +44,5 @@ def test_as_logged_adding_and_removing_training(driver):
     loginpage.type_valid_pswd()
     new_training = AddManualyActivity(driver)
     new_training.add_entry()
-    training = DeleteEntry
+    training = DeleteEntry(driver)
     training.delete_entry_after_adding()
