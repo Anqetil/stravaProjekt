@@ -1,7 +1,7 @@
 import pytest
 from Pages.registration_page import RegistrationPage
 from Pages.login_page import LoginPage
-from Pages.quest_home_page import HomePage
+from Pages.guest_home_page import HomePage
 from Pages.delete_activity_page import DeleteEntry
 from Pages.add_activity_page import AddManualyActivity
 from selenium import webdriver
