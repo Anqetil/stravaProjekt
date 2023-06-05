@@ -23,5 +23,5 @@ Należy pobrać repozytorium z github na swoje lokalne środowisko:
 
 
 ###### Informacje dodatkowe:
-Lokalizatory dla projektu aktualne na dzień 05.06.2023, w przypadku zauważenia zmian lokalizatorów na stronie głownej testowanej 
+Lokatory dla projektu aktualne na dzień 05.06.2023, w przypadku zauważenia zmian w lokatorach na stronie głownej testowanej 
 aplikacji, projekt zostanie aktualizowany.
