@@ -1,52 +1,33 @@
-## **Projekt zaliczeniowy w ramach studiów podyplomowych Tester oprogramowania dla aplikacji mobilnych i serwerowych**
+### Projekt zaliczeniowy w ramach studiów podyplomowych Tester oprogramowania dla aplikacji mobilnych i serwerowych
+
+**Celem projektu była automatyzacja przypadków testowych dla aplikacji internetowej Strava przy pomocy Selenium Webdriver z zastosowaniem Page Object Pattern.**
+
+Projekt opiera się na języku programownia Python oraz korzysta z bibliotek pytest, selenium, faker. 
+
+**W celu wykonania automatyzcji wymagany jest również Chromedriver do pobrania z https://chromedriver.chromium.org/getting-started**
+
+> **ⓘ Środowisko testowe** :
+>  - chrome wersja 113.0.5672.126
+>  - Ubuntu 22.04.2 LTS
+
+W projekcie wykorzystane jest wirtualne środowisko w cely utworzenia hermetycznego środowisko dla aplikacji. Szczegóły: [tutorial venv](https://docs.python.org/3/tutorial/venv.html)
 
 
-- ### Celem projektu była automatyzacja przypadków testowych dla aplikacji internetowej Strava przy pomocy Selenium Webdriver z zastosowaniem Page Object Pattern.
-
-
-
-
-
-- Projekt opiera się na języku programownia Python oraz korzysta z bibliotek pytest, selenium, faker oraz re. Wymagany jest również Chromedriver
-do pobrania z https://chromedriver.chromium.org/getting-started
-
-
-
-
-- Środowisko testowe:
-
-  ```bash
-  1. chrome wersja 113.0.5672.126
-  2. Ubuntu 22.04.2 LTS
-
-- W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowisko dla aplikacji:
-- Sprawdź: [tutorial venv](https://docs.python.org/3/tutorial/venv.html)
+Przygotowanie środowiska testowego:
 
   ```bash
-  # W projekcie wykorzystamy virtual environment, dla utworzenia hermetycznego środowiska dla bibliotek aplikacji:
+  git clone git@github.com:Anqetil/stravaProjekt.git
   python3 -m venv .venv
-
-  # aktywowanie hermetycznego środowiska
   source .venv/bin/activate
-  # przywracamy zależnosci
-   pip install -r requirements.txt
-  #Deaktywacja środowiska wirtualego
-     deactivate
+pip install -r requirements.txt
+  ```
 
-- Procedura uruchomienia  testów:
+Wykonanie procedury testowej:
 
-  ```bash
-  #Należy pobrać repozytorium z github na swoje lokalne środowisko:
-  $ git clone git@github.com:Anqetil/stravaProjekt.git
-  #virtualenv i zależności
-  Tworzymy wirtual envirment i przyrwacamy xzależności
-  #uruchomienie testów:
-  $ pytest ./Tests/tests.py*
+```bash
+ pytest ./Tests/tests.py
+ ```
 
 
 
-- Informacje dodatkowe:
-
-  ```bash
-  Lokatory dla projektu aktualne na dzień 05.06.2023, w przypadku zauważenia zmian w lokatorach na stronie głownej testowanej 
-  aplikacji, projekt zostanie zaktualizowany.
+> **⚠ UWAGA:** Lokatory dla projektu aktualne na dzień **05.06.2023**, w przypadku zauważenia zmian w lokatorach na stronie głownej testowanej aplikacji, projekt zostanie zaktualizowany.
