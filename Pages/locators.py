@@ -4,10 +4,10 @@ class Locators:
     class HomePage:
         cookie_accept_btn = (By.CSS_SELECTOR, ".btn-accept-cookie-banner")
         use_email = (By.CSS_SELECTOR, "button[data-testid='email_auth_btn']")
-        email_box = (By.ID, 'email')
-        password_box = (By.ID, 'new-password')
+        email_box = (By.ID, 'loh-email')
+        password_box = (By.ID, 'loh-new-password')
         valid_password = (By.ID, "password")
-        signUp_btn = (By.ID, 'signup-button')
+        signUp_btn = (By.ID, 'loh-signup-button')
         incorrect_password_message = (By.CSS_SELECTOR, "div[data-testid='password-error-message']")
         go_to_login_btn = (By.CSS_SELECTOR, ".Header--login-btn--eLCOL")
         loogin_accept_btn = (By.ID, "login-button")
