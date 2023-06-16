@@ -8,7 +8,7 @@ class LoginPage(BasePage):
         self.click_on(Locators.HomePage.go_to_login_btn, 60)
 
    def type_valid_email(self):
-        self.enter_txt(Locators.HomePage.email_box, TestData.email)
+        self.enter_txt(Locators.HomePage.login_email_box, TestData.email)
 
    def type_valid_pswd(self):
        self.enter_txt(Locators.HomePage.valid_password, TestData.valid_pswd)
